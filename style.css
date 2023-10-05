@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    /* when i postion sticky to header then its not working beacuse heiht of body 100%(my analogy that is it beacuse ahppen header in body but elemt take more height so when scroll happen then all then after body scroll then aftwer thet header also gone with body header is child of body */
+    /* height: 100%;   */
+    width: 100%;
+    font-family: 'Kanit', sans-serif;
+    /* font-family: 'Courier New'; */
+}
+
+
+
+
+header {
+    position: sticky;
+    top: 0;
+    /* Stick to the top of the viewport */
+    z-index: 3;
+    font-family: 'Leckerli One', cursive;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.2vw;
+    background-color: #000000;
+    color: #ff6600;
+}
+header>h2{
+    font-size: 1.9em;
+}
+
+header i {
+    font-size: xx-large;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+main {
+    /* height: calc(100% - 12%); */
+    background-color: #333333;
+    color: #ffffff;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main>h1 {
+    /* padding: 4vw; */
+
+    padding: 4vw;
+    padding-top: 6vw;
+    padding-right: 12vw;
+    padding-bottom: 8vh;
+
+    font-weight: 500;
+    font-size: 12vw;
+    line-height: 12vw;
+
+}
+
+main h1 span {
+    color: lightseagreen;
+    color:  #ff6600;
+}
+
+.row {
+    height: 70vw;
+    width: 92vw;
+    background-color: #ff6600;
+    color: #000000;
+    /* background-color: #333333; */
+    /* border: solid 1px black; */
+    border-radius: 5px;
+    margin-bottom: 8vh;
+
+
+
+    padding: 6vw 20px;
+    padding-top: 3vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.row>h1 {
+    padding-top: 2vw;
+    font-size: 2.2em;
+    line-height: 9vw;
+    text-decoration: underline;
+
+}
+
+.row>p {
+    font-size: 1.3em;
+    line-height: 6vw;
+}
+
+button {
+
+    font-size: 7vw;
+    /* padding:1vw 4vw; */
+    background-color: #ff884d;
+    color: #ffffff;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
