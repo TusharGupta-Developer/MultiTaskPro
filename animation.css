@@ -1,0 +1,73 @@
+/* .row:hover {
+    background-color: hwb(0 36% 0%);
+    transform: scale(1.1) translateY(-2vh);
+    transition: background-color 0.3s ease-in, transform 0.3s ease-in;
+    /* transform: translateY(-2vh);
+    /* transition: transform 0.3s ease-in; */
+    /* only work translate not scale for work both write translate in with scale */
+/* } */
+
+/* .row:not(:hover) { */
+    /* transform: scale(1);
+    background-color: #ff6600;
+
+    /* Return to original scale when not hovered */
+    /* transition: background-color 0.3s ease-out, transform 0.3s ease-out; */
+
+
+/* }   */
+
+button:hover {
+    background-color: #ecc8c8;
+    color: #ff884d;
+    /* transition: color 0.4s ease-in; */
+    /* transition: background-color 0.4s ease-in; */
+
+}
+
+button:not(:hover) {
+    background-color: #ff884d;
+    color: #f7dbdb;
+    transition: color 0.4s ease-in;
+    transition: background-color 0.4s ease-in;
+
+
+}
+
+/* @keyframes scaleUP {
+    0%{
+        transform: scale(1) translateY(-5vh);
+        
+    }
+    100%{
+        transform: scale(1.1) translateY(-5vh);
+        
+    }
+
+  
+    
+}
+@keyframes scaleIN {
+    0%{
+        transform: scale(1.1) translateY(-5vh);
+        
+    }
+    100%{
+        transform: scale(1) translateY(-5vh);
+        
+    }
+    
+}
+.row:hover{
+    animation: scaleUP .3s ease-in 0s 1 forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+/* } */
+
+/* .row:not(:hover){
+    animation: scaleIN .3s ease-in 0s 1 forwards;
+
+}
+
+
+
+ */ 
