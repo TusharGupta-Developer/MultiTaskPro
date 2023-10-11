@@ -12,6 +12,7 @@ body {
     width: 100%;
     font-family: 'Kanit', sans-serif;
     /* font-family: 'Courier New'; */
+    position: relative;
 }
 
 
@@ -24,18 +25,21 @@ header {
     z-index: 3;
     font-family: 'Leckerli One', cursive;
     width: 100%;
-    height: 10vh;
-    background-color: white;
+    height: 12vh;
+    /* background-color: white; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 4.2vw;
     background-color: #000000;
     color: #ff6600;
+    /* border-bottom: .001em solid white; */
 }
-header>h2{
+
+header>h2 {
     font-size: 1.9em;
 }
+
 
 header i {
     font-size: xx-large;
@@ -47,6 +51,10 @@ main {
     /* height: calc(100% - 12%); */
     background-color: #333333;
     color: #ffffff;
+
+
+
+
 
 
     display: flex;
@@ -71,7 +79,7 @@ main>h1 {
 
 main h1 span {
     color: lightseagreen;
-    color:  #ff6600;
+    color: #ff6600;
 }
 
 .row {
@@ -79,6 +87,7 @@ main h1 span {
     width: 92vw;
     background-color: #ff6600;
     color: #000000;
+
     /* background-color: #333333; */
     /* border: solid 1px black; */
     border-radius: 5px;
@@ -88,7 +97,7 @@ main h1 span {
 
     padding: 6vw 20px;
     padding-top: 3vw;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -113,8 +122,192 @@ button {
     font-size: 7vw;
     /* padding:1vw 4vw; */
     background-color: #ff884d;
-    color: #ffffff;
+    color: #f7dbdb;
+    /* color: #ff5202; */
+
     border: 1px solid black;
     border-radius: 5px;
+    padding: 0 1vw;
+}
+
+footer {
+    background-color: #000000;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
 
 }
+
+.copyright {
+    color: #ff6600;
+    /* Orange background color */
+    text-align: center;
+    padding: 10px 0;
+    /* Add spacing around the copyright text */
+    font-size: 5vw;
+    /* margin-top: 1vw; */
+
+
+}
+
+
+
+/* For Laptop/PC */
+
+@media (min-width:1000px) {
+    header {
+        /* padding: 0; */
+        padding: 0 3.2vw;
+        height: 6.5vw;
+
+    }
+
+    header>h2 {
+        font-size: 3.5em;
+    }
+
+
+
+
+    main>h1 {
+        font-size: 10vw;
+        line-height: 10vw;
+        padding-top: 3vw;
+        padding-bottom: 5vw;
+
+
+    }
+
+    .row {
+        width: 40%;
+        height: 33vh;
+        padding: 1vw;
+        padding-top: 2vw;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .row>h1 {
+        font-size: 2.2em;
+        line-height: 1vw;
+        padding: 0;
+
+    }
+
+    .row>p {
+        line-height: 1.9vw;
+    }
+
+    button {
+        font-size: 1.5em;
+        padding: .05em .10em;
+        /* color: #ff5202; */
+
+    }
+
+    main {
+
+        display: inline-block;
+        width: 100%;
+
+
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+
+        height: 45vh;
+        justify-content: space-around;
+        align-items: center;
+
+
+    }
+
+    footer {
+        height: 10vh;
+    }
+
+    .copyright {
+        padding: 0;
+        font-size: 2vw;
+    }
+
+}
+
+/* For all Tablet */
+@media (max-width :1000px) and (min-width : 600px) {
+    .row {
+        height: 30vh;
+        padding: 2vh 2vh;
+    }
+
+    .row>h1 {
+        font-size: 3em;
+        padding: 0;
+    }
+
+    .row>p {
+        font-size: 2em;
+        line-height: 1em;
+    }
+
+    button {
+        font-size: 2.5em;
+    }
+
+    footer {
+        height: 8vh;
+    }
+
+    .copyright {
+        font-size: 4vw;
+        padding: 6px 0;
+    }
+
+    header {
+        height: 10vh;
+        padding: 0 4.2vw;
+    }
+
+    header>h2 {
+        font-size: 3em;
+    }
+
+
+
+}
+
+/* back to top */
+html{
+    scroll-behavior: smooth;
+}
+.back-to-top{
+    position: fixed;
+    bottom: 4.5rem;
+    right:1rem;
+    transition:.2s ease-in;
+    
+}
+.back-to-top>span{
+    color: #ff6600;
+    background-color: #ff6600;
+    
+    font-size:xx-large;
+    font-weight: 600;
+    transition:.2s ease-in;
+    background-color: #000000;
+    border-radius: 5px;
+    /* width: 2.5vw; */
+    /* height: 2.8vw; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+
+.back-to-top:hover{
+    transform: translateY(-4px);
+}
+
