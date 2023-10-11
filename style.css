@@ -36,6 +36,7 @@ header {
     /* border-bottom: .001em solid white; */
 }
 
+
 header>h2 {
     font-size: 1.9em;
 }
@@ -46,6 +47,7 @@ header i {
     font-weight: 900;
     color: #ffffff;
 }
+
 
 main {
     /* height: calc(100% - 12%); */
@@ -233,6 +235,11 @@ footer {
     .copyright {
         padding: 0;
         font-size: 2vw;
+    }
+
+
+    .icon_container{
+        width: 25vw;
     }
 
 }

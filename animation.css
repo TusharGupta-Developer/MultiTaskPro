@@ -4,15 +4,15 @@
     transition: background-color 0.3s ease-in, transform 0.3s ease-in;
     /* transform: translateY(-2vh);
     /* transition: transform 0.3s ease-in; */
-    /* only work translate not scale for work both write translate in with scale */
+/* only work translate not scale for work both write translate in with scale */
 /* } */
 
 /* .row:not(:hover) { */
-    /* transform: scale(1);
+/* transform: scale(1);
     background-color: #ff6600;
 
     /* Return to original scale when not hovered */
-    /* transition: background-color 0.3s ease-out, transform 0.3s ease-out; */
+/* transition: background-color 0.3s ease-out, transform 0.3s ease-out; */
 
 
 /* }   */
@@ -34,40 +34,62 @@ button:not(:hover) {
 
 }
 
-/* @keyframes scaleUP {
-    0%{
-        transform: scale(1) translateY(-5vh);
-        
-    }
-    100%{
-        transform: scale(1.1) translateY(-5vh);
-        
-    }
+/* icon container */
+.icon_container {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 5;
+    /* color: #996e6e; */
+    background-color: #ff4800;
+    background-color: #ff4800;
+    background-color: rgb(53, 49, 49);
+    opacity: .9;
+    color: #ff6600;
 
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon_container>span{
+    width: 3rem;
+    height: 3rem;
+    color: #ff884d;
+    background-color: black;
+    position: fixed;
+    top:0;
+    right:1.5vw;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     
 }
-@keyframes scaleIN {
+.icon_container>span>i{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+
+@keyframes aniamte_icon {
     0%{
-        transform: scale(1.1) translateY(-5vh);
-        
+        /* transform: translateX(0); */
+        transform: scaleX(0);
+
     }
     100%{
-        transform: scale(1) translateY(-5vh);
-        
+        /* transform: translate(100vw); */
+        transform: scaleX(-100vw);
+
     }
     
 }
-.row:hover{
-    animation: scaleUP .3s ease-in 0s 1 forwards;
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-/* } */
 
-/* .row:not(:hover){
-    animation: scaleIN .3s ease-in 0s 1 forwards;
-
+.animate_icon:hover{
+    animation: animate_icon .5s linear 0s 1s ;
 }
-
-
-
- */ 

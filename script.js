@@ -25,6 +25,23 @@ for (let i = 0; i < myButtons.length; i++) {
 }
 
 
+// for menubar icon 
+const icon_container = document.getElementsByClassName("ri-menu-3-fill")[0];
+
+icon_container.addEventListener("click",(event)=>{
+    let div = document.createElement('div');
+    div.className = "animate_icon icon_container"
+    div.innerHTML = "<span><i class='ri-close-fill'></i></span> <h2>Home</h2><h2>About</h2><h2>Contanct</h2>";
+    document.body.prepend(div);
+
+    document.getElementsByClassName("ri-close-fill")[0].addEventListener("click",(event)=>{
+        div.outerHTML = ""
+    })
+
+})
+
+
+
 
 
  
