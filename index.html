@@ -10,7 +10,7 @@
 
     <title>MultiTaskPro: Your Ultimate Productivity Hub</title>
 
-    <link rel="icon" href="favicon-32x32.png" type="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <!-- for menu bar -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -23,8 +23,13 @@
     </style>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
+    <!-- for back to top scroll icon -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -32,59 +37,93 @@
         <h2>MultiTaskPro</h2>
         <!-- <p>The ultimate productivity hub that simplifies your tasks </P> -->
         <i class="ri-menu-3-fill"></i>
-
-
     </header>
+
 
     <main>
         <h1>The ultimate <span>productivity Hub</span> that simplifies your tasks !</h1>
 
 
-        <div class="row">
-            <h1>Passwords Geneartor</h1>
-            <p>Users can customize the generated passwords by specifying parameters</p>
-            <a href=""><button>
-                    <p>Geneartor</p>
-                </button></a>
-        </div>
-        <div class="row">
-            <h1>Task Management Tools</h1>
-            <p>These tools help users organize their tasks, to-do lists, and schedules. They can include features
-                like task creation, due dates and priority levels.</p>
-            <a href=""><button>Task Management</button></a>
-        </div>
-        <div class="row">
-            <h1> PDF Merger Tool</h1>
-            <p> With our PDF Merger, you can effortlessly combine multiple PDF files into a single, organized
-                document.</p>
-            <a href=""><button>PDF Merger</button></a>
 
-        </div>
-        <div class="row">
-            <h1> ID Generator </h1>
-            <p>Welcome to our ID Generator, a versatile tool designed to help you create unique identification for a
-                wide range of applications.</p>
-            <a href=""><button>ID Generator</button></a>
-        </div>
-        <div class="row">
-            <h1>Scientific Calculator</h1>
-            <p>Welcome to our Scientific Calculator, a powerful tool designed to assist you with a wide range of
-                mathematical and scientific calculations. </p>
-            <a href=""><button>Calculator</button></a>
-        </div>
-        <div class="row">
-            <h1>Weather Forecasting</h1>
-            <p>Whether you're planning outdoor activities, travel, or simply staying informed, our weather forecasting
-                tools are here to help. Enjoy the convenience of accurate weather information at your fingertips.</p>
-            <a href=""><button>Forecasting</button></a>
+        <div class="container">
+
+            <div class="row" data-aos="zoom-in-up">
+                <h1>Passwords Geneartor</h1>
+                <p>Users can customize the generated passwords by specifying parameters to create strong and random
+                    passwords for various accounts and applications.</p>
+                <a href=""><button>
+                        <p>Geneartor</p>
+                    </button></a>
+            </div>
+            <div class="row" data-aos="zoom-in-up">
+                <h1>Task Management Tools</h1>
+                <p>These tools help users organize their tasks, to-do lists, and schedules. They can include features
+                    like task creation, due dates and priority levels.</p>
+                <a href=""><button>Task Management</button></a>
+            </div>
         </div>
 
+        <div class="container">
+            <div class="row" data-aos="zoom-in-up">
+                <h1> PDF Merger Tool</h1>
+                <p> With our PDF Merger, you can effortlessly combine multiple PDF files into a single, organized
+                    document.</p>
+                <a href=""><button>PDF Merger</button></a>
+
+            </div>
+            <div class="row" data-aos="zoom-in-up">
+                <h1> ID Generator </h1>
+                <p>Welcome to our ID Generator, a versatile tool designed to help you create unique identification
+                    for a
+                    wide range of applications.</p>
+                <a href=""><button>ID Generator</button></a>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row" data-aos="zoom-in-up">
+                <h1>Scientific Calculator</h1>
+                <p>Welcome to our Scientific Calculator, a powerful tool designed to assist you with a wide range of
+                    mathematical and scientific calculations. </p>
+                <a href=""><button>Calculator</button></a>
+            </div>
+            <div class="row" data-aos="zoom-in-up">
+                <h1>Weather Forecasting</h1>
+                <p>Whether you're planning outdoor activities, travel, or simply staying informed, our weather
+                    forecasting tools are here to help.
+                </p>
+                <a href=""><button>Forecasting</button></a>
+            </div>
+        </div>
+        <!-- back to top scroll -->
+        <a href="#" class="back-to-top" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="400" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="false"
+            data-aos-anchor-placement="top-center">
+
+            <span class="material-symbols-outlined">
+                arrow_upward
+            </span>
+        </a>
     </main>
 
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2023 MultitaskPro. All rights reserved.</p>
+        </div>
+    </footer>
 
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120, // offset (in px) from the original trigger point
+            duration: 800, // values from 0 to 3000, with step 50ms
 
+
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 
