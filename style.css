@@ -65,7 +65,8 @@ main {
 
 }
 
-main>h1 {
+
+main>.help>h1 {
     /* padding: 4vw; */
 
     padding: 4vw;
@@ -77,6 +78,10 @@ main>h1 {
     font-size: 12vw;
     line-height: 12vw;
 
+}
+.help{
+    height: 35vh;
+    margin-bottom: 4vh;
 }
 
 main h1 span {
@@ -173,13 +178,16 @@ footer {
 
 
 
-    main>h1 {
+    main>.help>h1 {
         font-size: 10vw;
         line-height: 10vw;
         padding-top: 3vw;
         padding-bottom: 5vw;
 
 
+    }
+    .help{
+        height: 80vh;
     }
 
     .row {
@@ -281,6 +289,9 @@ footer {
 
     header>h2 {
         font-size: 3em;
+    }
+    .help{
+        margin-bottom: 18vh;
     }
 
 
