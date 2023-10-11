@@ -85,7 +85,7 @@ icon_container.addEventListener("click", (event) => {
 
 // })();
 
-const strings = ["  task !", "work !", "goal !", "chore !"];
+const strings = ["work !", "goal !", "chore !", "problem !" , "burden !"];
 let currentStringIndex = 0;
 let currentLetterIndex = 0;
 
@@ -97,7 +97,7 @@ function displayLetters() {
     currentLetterIndex++;
 
     if (currentLetterIndex <= currentString.length) {
-        setTimeout(displayLetters, 100); // Adjust the delay as needed
+        setTimeout(displayLetters, 60); // Adjust the delay as needed
     } else {
         setTimeout(eraseLetters, 1000); // Delay before erasing
     }
@@ -111,7 +111,7 @@ function eraseLetters() {
     currentLetterIndex--;
 
     if (currentLetterIndex >= 0) {
-        setTimeout(eraseLetters, 100); // Adjust the delay as needed
+        setTimeout(eraseLetters, 60); // Adjust the delay as needed
     } else {
         currentStringIndex = (currentStringIndex + 1) % strings.length;
         setTimeout(displayLetters, 1000); // Delay before displaying the next string
