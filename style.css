@@ -209,6 +209,10 @@ footer {
     .row>p {
         line-height: 1.9vw;
     }
+    .row>a{
+       
+       width:30%;
+    }
 
     button {
         font-size: 1.5em;

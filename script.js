@@ -13,7 +13,7 @@
 
 
 
-//// Get all anchor elements on the page
+//// Get all row class elements on the page
 const myButtons = document.getElementsByClassName("row")
 
 // Iterate through the buttons and attach click event listeners
