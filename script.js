@@ -13,8 +13,8 @@
 
 
 
-//// Get all button elements on the page
-const myButtons = document.getElementsByTagName('button');
+//// Get all anchor elements on the page
+const myButtons = document.getElementsByTagName('a');
 
 // Iterate through the buttons and attach click event listeners
 for (let i = 0; i < myButtons.length; i++) {
