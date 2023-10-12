@@ -124,7 +124,7 @@ main h1 span {
     line-height: 6vw;
 }
 .row>a{
-    width: 30%;
+    width: 60%;
 }
 
 button {
@@ -212,6 +212,9 @@ footer {
     .row>p {
         line-height: 1.9vw;
     }
+    .row>a{
+        width: 30%;
+    }
 
        
     
@@ -274,6 +277,9 @@ footer {
     .row>p {
         font-size: 2em;
         line-height: 1em;
+    }
+    .row>a{
+        width: 40%;
     }
 
     button {
