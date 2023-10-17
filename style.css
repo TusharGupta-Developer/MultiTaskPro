@@ -1,344 +1,351 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+   * {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
 
-}
+   }
 
-html,
-body {
-    /* when i postion sticky to header then its not working beacuse heiht of body 100%(my analogy that is it beacuse ahppen header in body but elemt take more height so when scroll happen then all then after body scroll then aftwer thet header also gone with body header is child of body */
-    /* height: 100%;   */
-    width: 100%;
-    font-family: 'Kanit', sans-serif;
-    /* font-family: 'Courier New'; */
-    position: relative;
-}
+   html,
+   body {
+       /* when i postion sticky to header then its not working beacuse heiht of body 100%(my analogy that is it beacuse ahppen header in body but elemt take more height so when scroll happen then all then after body scroll then aftwer thet header also gone with body header is child of body */
+       /* height: 100%;   */
+       width: 100%;
+       font-family: 'Kanit', sans-serif;
+       /* font-family: 'Courier New'; */
+       position: relative;
+   }
 
 
 
 
-header {
-    position: sticky;
-    top: 0;
-    /* Stick to the top of the viewport */
-    z-index: 3;
-    font-family: 'Leckerli One', cursive;
-    width: 100%;
-    height: 12vh;
-    /* background-color: white; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4.2vw;
-    background-color: #000000;
-    color: #ff6600;
-    /* border-bottom: .001em solid white; */
-}
+   header {
+       position: sticky;
+       top: 0;
+       /* Stick to the top of the viewport */
+       z-index: 3;
+       font-family: 'Leckerli One', cursive;
+       width: 100%;
+       height: 12vh;
+       /* background-color: white; */
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 4.2vw;
+       background-color: #000000;
+       color: #ff6600;
+       /* border-bottom: .001em solid white; */
+   }
 
 
-header>h2 {
-    font-size: 1.9em;
-}
+   header>h2 {
+       font-size: 1.9em;
+   }
 
 
-header i {
-    font-size: xx-large;
-    font-weight: 900;
-    color: #ffffff;
-}
+   header i {
+       font-size: xx-large;
+       font-weight: 900;
+       color: #ffffff;
+   }
 
 
-main {
-    /* height: calc(100% - 12%); */
-    background-color: #333333;
-    color: #ffffff;
+   main {
+       /* height: calc(100% - 12%); */
+       background-color: #333333;
+       color: #ffffff;
 
 
 
 
 
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
 
-}
+   }
 
 
-main>.help>h1 {
-    /* padding: 4vw; */
+   main>.help>h1 {
+       /* padding: 4vw; */
 
-    padding: 4vw;
-    padding-top: 6vw;
-    padding-right: 12vw;
-    padding-bottom: 8vh;
+       padding: 4vw;
+       padding-top: 6vw;
+       padding-right: 12vw;
+       padding-bottom: 8vh;
 
-    font-weight: 500;
-    font-size: 12vw;
-    line-height: 12vw;
+       font-weight: 500;
+       font-size: 12vw;
+       line-height: 12vw;
 
-}
-.help{
-    height: 35vh;
-    margin-bottom: 4vh;
-}
+   }
 
-main h1 span {
-    color: lightseagreen;
-    color: #ff6600;
-}
+   .help {
+       height: 35vh;
+       margin-bottom: 4vh;
+   }
 
-.row {
-    height: 70vw;
-    width: 92vw;
-    background-color: #ff6600;
-    color: #000000;
+   main h1 span {
+       color: lightseagreen;
+       color: #ff6600;
+   }
 
-    /* background-color: #333333; */
-    /* border: solid 1px black; */
-    border-radius: 5px;
-    margin-bottom: 8vh;
+   .row {
+       height: 70vw;
+       width: 92vw;
+       background-color: #ff6600;
+       color: #000000;
 
+       /* background-color: #333333; */
+       /* border: solid 1px black; */
+       border-radius: 5px;
+       margin-bottom: 8vh;
 
 
-    padding: 6vw 20px;
-    padding-top: 3vw;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+       padding: 6vw 20px;
+       padding-top: 3vw;
 
-}
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
 
-.row>h1 {
-    padding-top: 2vw;
-    font-size: 2.2em;
-    line-height: 9vw;
-    text-decoration: underline;
+   }
 
-}
+   .row>h1 {
+       padding-top: 2vw;
+       font-size: 2.2em;
+       line-height: 9vw;
+       text-decoration: underline;
 
-.row>p {
-    font-size: 1.3em;
-    line-height: 6vw;
-}
-.row>a{
-    width: 60%;
-}
+   }
 
-button {
+   .row>p {
+       font-size: 1.3em;
+       line-height: 6vw;
+   }
 
-    font-size: 7vw;
-    /* padding:1vw 4vw; */
-    background-color: #ff884d;
-    color: #f7dbdb;
-    /* color: #ff5202; */
+   .row>a {
+       width: 60%;
+   }
 
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 0 1vw;
-}
+   button {
 
-footer {
-    background-color: #000000;
-    height: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
+       font-size: 7vw;
+       /* padding:1vw 4vw; */
+       background-color: #ff884d;
+       color: #f7dbdb;
+       /* color: #ff5202; */
 
-}
+       border: 1px solid black;
+       border-radius: 5px;
+       padding: 0 1vw;
+   }
 
-.copyright {
-    color: #ff6600;
-    /* Orange background color */
-    text-align: center;
-    padding: 10px 0;
-    /* Add spacing around the copyright text */
-    font-size: 5vw;
-    /* margin-top: 1vw; */
+   footer {
+       background-color: #000000;
+       height: 20vw;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border: none;
 
+   }
 
-}
+   .copyright {
+       color: #ff6600;
+       /* Orange background color */
+       text-align: center;
+       padding: 10px 0;
+       /* Add spacing around the copyright text */
+       font-size: 5vw;
+       /* margin-top: 1vw; */
 
 
+   }
 
-/* For Laptop/PC */
 
-@media (min-width:1000px) {
-    header {
-        /* padding: 0; */
-        padding: 0 3.2vw;
-        height: 6.5vw;
 
-    }
+   /* For Laptop/PC */
 
-    header>h2 {
-        font-size: 3.5em;
-    }
+   @media (min-width:1000px) {
+       header {
+           /* padding: 0; */
+           padding: 0 3.2vw;
+           height: 6.5vw;
 
+       }
 
+       header>h2 {
+           font-size: 3.5em;
+       }
 
 
-    main>.help>h1 {
-        font-size: 10vw;
-        line-height: 10vw;
-        padding-top: 3vw;
-        padding-bottom: 5vw;
 
 
-    }
-    .help{
-        height: 80vh;
-    }
+       main>.help>h1 {
+           font-size: 10vw;
+           line-height: 10vw;
+           padding-top: 3vw;
+           padding-bottom: 5vw;
 
-    .row {
-        width: 40%;
-        height: 33vh;
-        padding: 1vw;
-        padding-top: 2vw;
-        margin: 0;
-        justify-content: space-around;
-    }
 
-    .row>h1 {
-        font-size: 2.2em;
-        line-height: 1vw;
-        padding: 0;
+       }
 
-    }
+       .help {
+           height: 80vh;
+       }
 
-    .row>p {
-        line-height: 1.9vw;
-    }
-    .row>a{
-        width: 30%;
-    }
+       .row {
+           width: 40%;
+           height: 33vh;
+           padding: 1vw;
+           padding-top: 2vw;
+           margin: 0;
+           justify-content: space-around;
+       }
 
-       
-    
-        
+       .row>h1 {
+           font-size: 2.2em;
+           line-height: 1vw;
+           padding: 0;
 
-    button {
-        font-size: 1.5em;
-        padding: .05em .10em;
-        /* color: #ff5202; */
+       }
 
-    }
+       .row>p {
+           line-height: 1.9vw;
+       }
 
-    main {
+       .row>a {
+           width: 30%;
+       }
 
-        display: inline-block;
-        width: 100%;
 
 
-    }
 
-    .container {
-        width: 100%;
-        display: flex;
 
-        height: 45vh;
-        justify-content: space-around;
-        align-items: center;
+       button {
+           font-size: 1.5em;
+           padding: .05em .10em;
+           /* color: #ff5202; */
 
+       }
 
-    }
+       main {
 
-    footer {
-        height: 10vh;
-    }
+           display: inline-block;
+           width: 100%;
 
-    .copyright {
-        padding: 0;
-        font-size: 2vw;
-    }
 
+       }
 
-    .icon_container{
-        width: 25vw;
-    }
+       .container {
+           width: 100%;
+           display: flex;
 
-}
+           height: 45vh;
+           justify-content: space-around;
+           align-items: center;
 
-/* For all Tablet */
-@media (max-width :1000px) and (min-width : 600px) {
-    .row {
-        height: 30vh;
-        padding: 2vh 2vh;
-    }
 
-    .row>h1 {
-        font-size: 3em;
-        padding: 0;
-    }
+       }
 
-    .row>p {
-        font-size: 2em;
-        line-height: 1em;
-    }
-    .row>a{
-        width: 40%;
-    }
+       footer {
+           height: 10vh;
+       }
 
-    button {
-        font-size: 2.5em;
-    }
+       .copyright {
+           padding: 0;
+           font-size: 2vw;
+       }
 
-    footer {
-        height: 8vh;
-    }
 
-    .copyright {
-        font-size: 4vw;
-        padding: 6px 0;
-    }
+       .icon_container {
+           width: 25vw;
+       }
 
-    header {
-        height: 10vh;
-        padding: 0 4.2vw;
-    }
+   }
 
-    header>h2 {
-        font-size: 3em;
-    }
-    .help{
-        margin-bottom: 18vh;
-    }
+   /* For all Tablet */
+   @media (max-width :1000px) and (min-width : 600px) {
+       .row {
+           height: 30vh;
+           padding: 2vh 2vh;
+       }
 
+       .row>h1 {
+           font-size: 3em;
+           padding: 0;
+       }
 
+       .row>p {
+           font-size: 2em;
+           line-height: 1em;
+       }
 
-}
+       .row>a {
+           width: 40%;
+       }
 
-/* back to top */
-html{
-    scroll-behavior: smooth;
-}
-.back-to-top{
-    position: fixed;
-    bottom: 4.5rem;
-    right:1rem;
-    transition:.2s ease-in;
-    
-}
-.back-to-top>span{
-    color: #ff6600;
-    background-color: #ff6600;
-    
-    font-size:xx-large;
-    font-weight: 600;
-    transition:.2s ease-in;
-    background-color: #000000;
-    border-radius: 5px;
-    /* width: 2.5vw; */
-    /* height: 2.8vw; */
-    /* display: flex; */
-    /* justify-content: space-around; */
-    /* align-items: center; */
-}
+       button {
+           font-size: 2.5em;
+       }
 
-.back-to-top:hover{
-    transform: translateY(-4px);
-}
+       footer {
+           height: 8vh;
+       }
 
+       .copyright {
+           font-size: 4vw;
+           padding: 6px 0;
+       }
+
+       header {
+           height: 10vh;
+           padding: 0 4.2vw;
+       }
+
+       header>h2 {
+           font-size: 3em;
+       }
+
+       .help {
+           margin-bottom: 18vh;
+       }
+
+
+
+   }
+
+   /* back to top */
+   html {
+       scroll-behavior: smooth;
+   }
+
+   .back-to-top {
+       position: fixed;
+       bottom: 4.5rem;
+       right: 1rem;
+       transition: .2s ease-in;
+
+   }
+
+   .back-to-top>span {
+       color: #ff6600;
+       background-color: #ff6600;
+
+       font-size: xx-large;
+       font-weight: 600;
+       transition: .2s ease-in;
+       background-color: #000000;
+       border-radius: 5px;
+       /* width: 2.5vw; */
+       /* height: 2.8vw; */
+       /* display: flex; */
+       /* justify-content: space-around; */
+       /* align-items: center; */
+   }
+
+   .back-to-top:hover {
+       transform: translateY(-4px);
+   }
